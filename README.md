@@ -11,3 +11,5 @@ We use data from the internet scanner Shodan.io, a search engine for publicly ac
 * Average the normalized scores across all products to get one overall score per country
 
 * Group tools into categories (e.g. file storage, communication) to show strengths and weaknesses per area
+
+Website: [dsi.nextcloud.com](https://dsi.nextcloud.com/)
