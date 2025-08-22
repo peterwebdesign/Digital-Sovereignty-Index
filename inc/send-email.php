@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
   $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
   $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
-  $message = htmlspecialchars($_POST['message']);
+  $message = str_replace(["\r\n", "\r"], "\n", $_POST['message']); // normalize to \n
 
   if (!$email) {
     die("Invalid email");
